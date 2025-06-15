@@ -1,68 +1,102 @@
-<Doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<head>
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
+        nav ul li a {
+            color: #00d8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-            main {
-                padding: 20px;
-            }
+        main {
+            padding: 30px;
+        }
 
-            section {
-                margin-bottom: 20px;
-            }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="courses">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Sai Sritej Palacharla</h1>
+            <p>Have questions about DevOps, projects, or learning resources? Feel free to reach out or connect with me using the links below!</p>
+            <ul class="contact-links">
+                <li>📧 Email: <a href="mailto:saisritej.palacharla@email.com">saisritej.palacharla@email.com</a></li>
+                <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/saisritej" target="_blank">linkedin.com/in/saisritej</a></li>
+                <li>💻 GitHub: <a href="https://github.com/saisritej" target="_blank">github.com/saisritej</a></li>
+                <li>📁 Resume: <a href="resume.pdf" download>Download Resume</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Sai Sritej Palacharla</p>
+    </footer>
+</body>
+</html>
