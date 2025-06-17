@@ -1,96 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Tej's DevOps Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: #fff;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+        header, footer {
+            background-color: #111;
             text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
             padding: 20px;
         }
 
-        section {
-            margin-bottom: 20px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        nav ul li {
+            margin: 0 15px;
         }
-    </style>    
+
+        nav ul li a {
+            color: #00f2fe;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #7ef9ff;
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2 {
+            color: #7ef9ff;
+        }
+
+        p, li {
+            line-height: 1.7;
+            font-size: 1.05rem;
+            color: #e0f7fa;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #80dfff;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1><i class="fas fa-terminal icon"></i>Tej's DevOps Learning Hub</h1>
         <nav>
             <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
+                <li><a href="home.html"><i class="fas fa-home icon"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user icon"></i>About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon"></i>Contact</a></li>
+                <li><a href="courses.html"><i class="fas fa-book icon"></i>Courses</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1>Myself Tej We start Learning DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
+            <h2><i class="fas fa-user-graduate icon"></i>About Me</h2>
+            <p>I’m Tej, a Computer Science student and aspiring DevOps Engineer. I’m building this platform as my personal DevOps lab to showcase my learning journey, share projects, and connect with recruiters and mentors.</p>
         </section>
 
         <section>
-            <h2>Overview</h2>
-            <p>Zero to Hero courses on all DevOps tools and popular Cloud (AWS and Azure) platforms.</p>
+            <h2><i class="fas fa-bullseye icon"></i>Current Learning</h2>
+            <ul>
+                <li>CI/CD with GitHub Actions & Jenkins</li>
+                <li>Docker & Kubernetes for Microservices</li>
+                <li>Infrastructure as Code with Terraform</li>
+                <li>Monitoring with Prometheus and Grafana</li>
+                <li>Cloud deployments on AWS and Azure</li>
+            </ul>
         </section>
 
         <section>
-            <h2>Mastering CI/CD with Jenkins</h2>
-            <p>This hands-on course dives into the fundamentals of Continuous Integration and Continuous Delivery using Jenkins. You'll build and deploy real-world pipelines, integrate GitHub, Docker, and Kubernetes, and automate testing and deployment stages with ease.</p>  
+            <h2><i class="fas fa-laptop-code icon"></i>Live Project</h2>
+            <p>I’m developing a fully automated pipeline that:</p>
+            <ul>
+                <li>Triggers builds on GitHub push</li>
+                <li>Creates Docker containers and pushes to DockerHub</li>
+                <li>Deploys to Kubernetes via Helm</li>
+                <li>Monitors system metrics and alerts</li>
+            </ul>
         </section>
 
         <section>
-            <h2>What I'm Working On</h2>
-            <p>I’m currently building a full DevOps pipeline project from scratch using Jenkins, Docker, Kubernetes, and GitHub Actions. The goal is to automate code integration, testing, and containerized deployment on a Kubernetes cluster. This hands-on learning is helping me strengthen my skills in real-world CI/CD workflows, Infrastructure as Code, and cloud-native tools — preparing me for production-ready DevOps roles.</p>
+            <h2><i class="fas fa-briefcase icon"></i>Message to Recruiters</h2>
+            <p>If you're looking for a self-driven, hands-on learner in DevOps, Cloud, or SRE roles — let's connect!</p>
+            <p><i class="fas fa-envelope icon"></i>Email: saisritej.palacharla@email.com</p>
+            <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/saisritej" target="_blank">linkedin.com/in/saisritej</a></p>
+            <p><i class="fas fa-file-download icon"></i><a href="resume.pdf" download>Download Resume</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Sai Sritej Palacharla</p>
+        <p>&copy; 2025 Sai Sritej Palacharla • Designed for the future of DevOps</p>
     </footer>
 </body>
 </html>

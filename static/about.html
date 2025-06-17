@@ -5,48 +5,85 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: #fff;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+        header, footer {
+            background-color: #111;
             text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
             padding: 20px;
         }
 
-        section {
-            margin-bottom: 20px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        footer {
-            background-color: #333;
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #00f2fe;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #7ef9ff;
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2 {
+            color: #7ef9ff;
+        }
+
+        p, li {
+            line-height: 1.7;
+            font-size: 1.05rem;
+            color: #e0f7fa;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #80dfff;
+        }
+
+        a:hover {
             color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
 </head>
@@ -64,14 +101,28 @@
 
     <main>
         <section>
-            <h1>About This Website</h1>
-            <p>Welcome! This platform is dedicated to helping students, beginners, and aspiring professionals learn DevOps from scratch.</p>
-            <p>We aim to simplify complex tools and concepts with practical, hands-on tutorials and real-world projects covering CI/CD, cloud platforms, containerization, automation, and more.</p>
-            <p>Whether you're just starting out or looking to sharpen your DevOps skills, you're in the right place. New content will be added regularly to keep your learning journey fresh and up-to-date.</p>
-            <p>Start learning, build confidence, and level up your DevOps career — one step at a time.</p>
+            <h1>About This Platform</h1>
+            <p>Hello, I'm Sai Sritej Palacharla — a Computer Science student with a growing passion for DevOps, Cloud Engineering, and Infrastructure as Code. This platform is a reflection of my learning journey, designed to help me (and others) go from beginner to production-ready engineer through consistent, hands-on learning.</p>
+    
+            <p>Instead of just consuming tutorials, I believe in <strong>learning by building</strong>. Every concept I study — whether it's CI/CD, Docker, Kubernetes, or Terraform — is reinforced by practical implementation and project-based execution.</p>
+    
+            <p>This site isn't a static portfolio — it's a living record of my growth as a DevOps learner. I'm constantly applying new tools, documenting real-world projects, and solving problems you'd encounter in modern cloud-native environments.</p>
+    
+            <h2>Why I Created This</h2>
+            <p>I wanted a space where I could:</p>
+            <ul>
+                <li>🛠️ Practice and document real DevOps workflows</li>
+                <li>📘 Share useful learning paths for fellow students and beginners</li>
+                <li>🚀 Show recruiters and mentors what I'm actively building</li>
+                <li>💼 Prepare myself for a future career in Cloud/DevOps/SRE roles</li>
+            </ul>
+    
+            <h2>To Recruiters and Mentors</h2>
+            <p>If you’re reading this — thank you for taking time to explore my work. I’m actively looking for internships or entry-level opportunities where I can grow, contribute, and be mentored.</p>
+            <p>I’m not afraid to dive into complex systems, take ownership, and learn fast. This site is my proof.</p>
+            <p><strong>Let’s connect!</strong> You can find my contact details and resume on the <a href="contact">Contact</a> page.</p>
         </section>
     </main>
-
     <footer>
         <p>&copy; Sai Sritej Palacharla</p>
     </footer>
